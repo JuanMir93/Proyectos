@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/estilo_producto.css">
+    <title>Formulario de productos</title>
+</head>
+<body>
+    <form class="product">
+        <h2 class="product_title">Formulario para productos</h2>
+        <h3 class="product_txt">Categoria</h3>
+        <input type="text" placeholder="Ingrese la categoría del producto" required class="inp_product" id="product">
+        <h3 class="product_txt">Nombre</h3>
+        <input type="text" placeholder="Ingrese nombre del producto" required class="inp_product" id="name_product">
+        <h3 class="product_txt">Número ID</h3>
+        <input type="number" placeholder="Ingrese ID del producto" required class="inp_product" id="id_product">
+        <h3 class="product_txt">Precio del producto</h3>
+        <input type="number" class="inp_product" placeholder="Ingrese el precio del producto" required id="p_product">
+        <h3 class="product_txt">Imagen del producto</h3>
+        <input type="file" name="image" class="img_product" id="image_product">
+        <h3 class="product_txt">Descripcion</h3>
+        <textarea name="descripcion_producto" id="description" cols="50" rows="10"  class="area_product" required></textarea>
+        
+        <div class="div_btn">  
+            <button type="submit" id="btn_save" class="btn">Guardar</button>
+            <button type="button" id="btn_cancel"  class="btn">Cancelar</button>
+        </div>
+        <h1 class="name">&copy Juan Miranda</h1>
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script  src="/assets/js/validaciones_p.js" type="text/javascript"></script>
+</html>

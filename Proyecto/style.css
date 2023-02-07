@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;  
+   margin: 0;
+}   
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #343752;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%231e142e' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    margin: 0;
+    font-family: 'Roboto',  sans-serif;
+}
+
+h1{ font-size: 3.5em;color: white;}
+h2{ font-size: 2.7em;color: white;}
+h3{ font-size: 2em;color: white;}
+p{font-size: 1.25em;color: white;}
+ul{list-style: none;}
+li{ font-size: 1.25em;color: white;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(59, 21, 94);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color:rgb(248, 252, 14);}
+
+header {
+    background-color: rgb(245,245,245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.5em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image:   linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ) 
+    ,url("img/pexels-pixabay-417173.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#ingresa-ya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 100px 0px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 15px;
+}                                                                       
+
+.carta:first-child{
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.1)
+    )
+    ,url("img/pexels-sebastian-palomino-1955134.jpg");
+  
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.1)
+    )
+    ,url("img/pexels-jeremy-bishop-2524874.jpg");
+}
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+        )
+    ,url("img/pexels-jeremy-bishop-2422915.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px opx;
+    font-weight: bold;
+}
+
+#final{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: rgb(30,30,30);
+   color: white;
+   height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 700px){
+    header{
+        
+        position: fixed;
+        width:100% ;
+    }
+    
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    header nav{
+        
+        flex-direction: row;
+        justify-content: right;
+        padding-bottom: 10px;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #ingresa-ya .container{
+        display: flex;
+        justify-content:center;
+    }
+
+    #ingresa-ya .texto{
+        width:  50,50,50, 05%;
+        max-width: 600px;  
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    #ingresa-ya h2{
+        margin-top: 0px;
+    }
+    
+    #ingresa-ya .img-container{
+        background-image:  url("img/pexels-rudolf-jakkel-418831.jpg");
+        background-size: 500px 600px;
+        background-position: center center;
+        height: 500px;
+        width: 800px;
+    
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 300px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba  (50,50,50, 05);
+        box-shadow: 2px 2xp 10px rgba(0,0,0,0.5);
+    }
+
+    #caracteristicas {
+        background-image: url("img/pexels-pixabay-33109.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 300px;
+        background-position: calc(100vw - 700px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    } 
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 4em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media(min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px) ;
+    }
+}
